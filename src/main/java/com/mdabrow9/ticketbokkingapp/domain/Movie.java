@@ -1,5 +1,6 @@
 package com.mdabrow9.ticketbokkingapp.domain;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
 import javax.persistence.*;

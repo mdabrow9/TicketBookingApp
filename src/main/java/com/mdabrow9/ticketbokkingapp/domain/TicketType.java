@@ -16,6 +16,17 @@ public class TicketType
     private String name;
     private BigDecimal price;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "ticketType")
+    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "ticketTypes")
     private List<Reservation> reservations;
+
+
+    public TicketType(String name, BigDecimal price)
+    {
+        this.name = name;
+        this.price = price;
+    }
+
+    public TicketType()
+    {
+    }
 }
