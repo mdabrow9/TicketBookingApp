@@ -108,9 +108,9 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
         List <Seat> room2Seats = new ArrayList<>();
         List <Seat> room3Seats = new ArrayList<>();
 
-        for(int i =1;i<=5;i++)
+        for(int i =1;i<=4;i++)
         {
-            for(int j = 1;j<10;j++)
+            for(int j = 1;j<11;j++)
             {
                 Seat seat = new Seat();
                 seat.setSeatRow(i);
