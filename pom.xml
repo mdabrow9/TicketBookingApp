@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mdabrow9</groupId>
-    <artifactId>ticketbokkingapp</artifactId>
+    <artifactId>ticketbookingapp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Ticket bokking app</name>
+    <name>Ticket booking app</name>
     <description>ticket booking app in multiplex cinema</description>
     <properties>
         <java.version>11</java.version>
@@ -49,12 +49,6 @@
         </dependency>
 
 
-
-        <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct</artifactId>
-            <version>1.4.2.Final</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -89,31 +83,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-
-
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5.1</version>
-                <configuration>
-                    <source>13</source>
-                    <target>13</target>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>1.18.20</version>
-                        </path>
-                        <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>1.4.2.Final</version>
-                        </path>
-                    </annotationProcessorPaths>
-                </configuration>
-            </plugin>
-
 
         </plugins>
     </build>
